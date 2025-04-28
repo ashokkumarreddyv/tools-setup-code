@@ -1,5 +1,5 @@
 infra:
 	git pull
-	terraform ulimit
+	terraform init
 	terraform plan
 	terraform approve -auto-approve
