@@ -25,7 +25,6 @@ variable "tools" {
 module "tools-infra" {
   source = "./module-infra"
   for_each = var.tools
-}
   ami_id = var.ami_id
   instance_type = each.value["instance_type"]
   name    = each.key
