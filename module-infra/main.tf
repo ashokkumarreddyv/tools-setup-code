@@ -29,7 +29,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_ssh" {
   from_port         = 22
   ip_protocol       = "tcp"
   to_port           = 22
-  discription       = "ssh"
+  description       = "ssh"
 }
 
 resource "aws_vpc_security_group_ingress_rule" "allow_all_ipv4" {
@@ -38,7 +38,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_all_ipv4" {
   from_port         = var.port
   ip_protocol       = "tcp"
   to_port           = var.port
-  discription       = var.name
+  description       = var.name
 }
 
 resource "aws_vpc_security_group_egress_rule" "egress_allow_all" {
